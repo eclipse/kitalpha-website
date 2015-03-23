@@ -1,0 +1,307 @@
+<!doctype html>
+<html>
+<link rel="icon" type="image/png" href="favicon.ico" />
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Kitalpha</title>
+	<link rel="stylesheet" href="styles.css" type="text/css" />
+	
+	<style>
+		
+		.dnd a:link {
+			color: #242A75;
+			font-weight: bold;
+			text-decoration:none;
+		}
+		.dnd a:visited {
+			color: #999999;
+			font-weight:bold;
+			text-decoration:none;
+		}
+		.dnd a:active,
+		.dnd a:hover {
+			color: #1791AB;
+			text-decoration:underline;
+		}
+		.dnd {
+			font-family:Arial, Helvetica, sans-serif;
+			color:#242A75;
+			font-size:12px;
+			text-shadow: 1px 1px 0px #fff;
+			background:#eaebec;
+			#margin:20px;
+			border:#ccc 1px solid;
+
+			-moz-border-radius:3px;
+			-webkit-border-radius:3px;
+			border-radius:3px;
+
+			-moz-box-shadow: 0 1px 2px #d1d1d1;
+			-webkit-box-shadow: 0 1px 2px #d1d1d1;
+			box-shadow: 0 1px 2px #d1d1d1;
+		}
+		.dnd th {
+			padding:21px 25px 22px 25px;
+			border-top:1px solid #fafafa;
+			border-bottom:1px solid #e0e0e0;
+
+			background: #ededed;
+			background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
+			background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
+		}
+		.dnd th:first-child {
+			text-align: left;
+			padding-left:20px;
+		}
+		.dnd tr:first-child th:first-child {
+			-moz-border-radius-topleft:3px;
+			-webkit-border-top-left-radius:3px;
+			border-top-left-radius:3px;
+		}
+		.dnd tr:first-child th:last-child {
+			-moz-border-radius-topright:3px;
+			-webkit-border-top-right-radius:3px;
+			border-top-right-radius:3px;
+		}
+		.dnd tr {
+			text-align: center;
+			padding-left:20px;
+		}
+		.dnd td:first-child {
+			text-align: left;
+			padding-left:20px;
+			border-left: 0;
+		}
+		.dnd td {
+			padding:18px;
+			border-top: 1px solid #ffffff;
+			border-bottom:1px solid #e0e0e0;
+			border-left: 1px solid #e0e0e0;
+
+			background: #fafafa;
+			background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
+			background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
+		}
+		.dnd tr.even td {
+			background: #f6f6f6;
+			background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
+			background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
+		}
+		.dnd tr:last-child td {
+			border-bottom:0;
+		}
+		.dnd tr:last-child td:first-child {
+			-moz-border-radius-bottomleft:3px;
+			-webkit-border-bottom-left-radius:3px;
+			border-bottom-left-radius:3px;
+		}
+		.dnd tr:last-child td:last-child {
+			-moz-border-radius-bottomright:3px;
+			-webkit-border-bottom-right-radius:3px;
+			border-bottom-right-radius:3px;
+		}
+		.dnd tr:hover td {
+			background: #f2f2f2;
+			background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
+			background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
+		}
+	</style>
+	
+	
+	<!-- Add jQuery library -->
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	
+
+	
+	<script>
+		  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+		
+		  ga('create', 'UA-60944796-1', 'auto');
+		  ga('send', 'pageview');
+	</script>
+	
+</head>
+<body>
+	<header>
+		<div class="logo-left width">
+			<a href="index.html"><img src="images/logo_kitalpha.png" alt="Kitalpha logo" width="40%"></a>
+		</div>
+	</header>
+
+    <nav>
+		<div class="width">
+			<ul>
+				<li class="start"><a href="index.html">Home</a></li>
+				<li class="divider-vertical-second-menu"></li>
+				<li><a href="https://polarsys.org/wiki/Kitalpha/features">Features</a></li>
+				<li class="divider-vertical-second-menu"></li>
+				<li><a href="start.html">Getting Started</a></li>
+				<li class="divider-vertical-second-menu"></li>
+				<li><a href="events.html">Events</a></li>
+				<li class="divider-vertical-second-menu"></li>
+				<li class="end"><a href="community.html">Community</a></li>
+				<li style="text-align:right;"><a href="download.html" class="box">Download</a></li>
+				<li style="float:none;"><br style="clear:both;" /></li> 
+			</ul>		
+		</div>
+    </nav>
+
+	<div id="hrdiv">
+		<img src="images/bg_breadcrumb.jpg" width="" alt="" height="" />
+	</div>
+
+    <div id="body" class="width-started">
+		
+		
+        <section id="content">
+		
+			<article class="expanded">
+				<h3>
+					Kitalpha v0.5.1-RC1:
+				</h3>
+				<table class="dnd" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
+
+					<!-- Table Header -->
+					
+					<thead>
+						<tr>
+							<th>Operating System</th>
+							<th>Architecture</th>
+							<th>Download link</th>
+						</tr>
+					</thead>
+					
+					<!-- Table Header -->
+
+					<!-- Table Body -->
+					<tbody>
+
+						<tr>
+							<td>Windows</td>
+							<td>32-bit</td>
+							<td><a href="http://download.polarsys.org/kitalpha/0.5.1RC1/kitalpha_0.5.1RC1-2015-02-25_00-01-11-win32-win32-x86-juno-incubation.zip" 
+									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '0.5.1-RC1', 'Win-x86');"><img src="images/download.png" width="15%" alt="Link"></a></td>
+						</tr><!-- Table Row -->
+
+						<tr class="even">
+							<td>Windows</td>
+							<td>64-bit</td>
+							<td><a href="http://download.polarsys.org/kitalpha/0.5.1RC1/kitalpha_0.5.1RC1-2015-02-25_00-01-11-win32-win32-x86_64-juno-incubation.zip" 
+									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '0.5.1-RC1', 'Win-x64');"><img src="images/download.png" width="15%" alt="Link"></a></td>
+						</tr><!-- Darker Table Row -->
+
+						<tr>
+							<td>Linux</td>
+							<td>32-bit</td>
+							<td><a href="http://download.polarsys.org/kitalpha/0.5.1RC1/kitalpha_0.5.1RC1-2015-02-25_00-01-11-linux-gtk-x86-juno-incubation.zip" 
+									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '0.5.1-RC1', 'Linux-x86');"><img src="images/download.png" width="15%" alt="Link"></a></td>
+						</tr>
+
+						<tr class="even">
+							<td>Linux</td>
+							<td>64-bit</td>
+							<td><a href="http://download.polarsys.org/kitalpha/0.5.1RC1/kitalpha_0.5.1RC1-2015-02-25_00-01-11-linux-gtk-x86_64-juno-incubation.zip" 
+									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '0.5.1-RC1', 'Linux-x64');"><img src="images/download.png" width="15%" alt="Link"></a></td>
+						</tr>
+
+						<tr>
+							<td>Mac OSX</td>
+							<td>64-bit</td>
+							<td><a href="http://download.polarsys.org/kitalpha/0.5.1RC1/kitalpha_0.5.1RC1-2015-02-25_00-01-11-macosx-cocoa-x86_64-juno-incubation.zip" 
+									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '0.5.1-RC1', 'MacOS-x64');"><img src="images/download.png" width="15%" alt="Link"></a></td>
+						</tr>
+
+					</tbody>
+					<!-- Table Body -->
+
+				</table>
+				
+				<br />
+				
+				<p>
+					&nbsp;&nbsp;&nbsp;The installation instructions are detailed in the <b> <a href=""> <i> Getting Started </i> </a> </b> page.
+				</p>				
+			</article>
+        </section>
+        
+        <aside class="sidebar">
+
+           <ul>	
+				<li>
+					<h4>Important information</h4>
+					<ul>
+						<li>
+							<u>Note:</u> These are pre-release versions, not official versions. 
+						</li>
+						<li>
+							<sup>*</sup><u>Note:</u> MacOS and Linux versions have not been field-tested. Do not hesitate to provide your feedback on the forum. 
+						</li>
+                    </ul>
+                </li>
+                                               
+            	<li>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<a href="http://www.eclipse.org/projects/what-is-incubation.php"><img src="images/egg-incubation.png" alt="incubation"/></a>
+				</li> 
+			</ul>
+			<br />
+			<br />
+			<br />
+		
+        </aside>
+    	<div class="clear"></div>
+    </div>
+	
+    <footer>
+		<div class="footer-content width">
+			<ul>
+				<li><h4>PolarSys</h4></li>
+				<li><a href="https://www.polarsys.org/eclipse_sites/org_home">About</a></li>
+				<li><a href="https://www.polarsys.org/eclipse_sites/contact">Contact Us</a></li>
+			</ul>
+			<ul>
+            	<li><h4>Legal</h4></li>
+				<li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
+				<li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
+				<li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
+				<li><a href="https://www.eclipse.org/org/documents/epl-v10.php">Eclipse Public License</a></li>
+				<li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
+            </ul>
+			<ul>
+				<li><h4>Useful Links</h4></li>
+				<li><a href="https://polarsys.org/bugs/describecomponents.cgi?product=Kitalpha">Report a Bug</a></li>
+				<li><a href="https://polarsys.org/wiki/Kitalpha">How to Contribute</a></li>
+				<li><a href="https://polarsys.org/mailman/listinfo/kitalpha-dev">Mailing List</a></li>
+				<li><a href="https://polarsys.org/forums/index.php/f/8/">Forum</a></li>
+			</ul>
+			<ul class="endfooter">
+				<li><h4>Other</h4></li>
+				<li><a href="https://www.thalesgroup.com/">Thalesgroup</a></li>
+				<li><a href="https://www.eclipse.org/org/workinggroups/">Working Groups</a></li>
+			</ul>
+			<table>
+				<tr>
+					<td>
+						<a href="http://www.polarsys.org/"><img src="images/polarsys.png" alt="PolarSys logo" width="250"></a>
+						<br />
+						<br />
+					</td>
+					<td>
+						<div class="right-footer">
+							<a href="http://www.eclipse.org/"><img src="images/eclipse.png" alt="Eclipse logo"></a>
+							<br />
+							Copyright © <span id="year">2014</span> The Eclipse Foundation. <br /> All Rights Reserved.
+						</div>
+					</td>
+				</tr>
+			</table>
+		
+			<div class="clear"></div>			
+		</div>
+   
+	</footer>
+</body>
+</html>

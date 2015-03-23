@@ -587,9 +587,9 @@ footer {
 }
 
 #footer-start {
-	margin: 140em auto 0;
+	margin: 50em auto 0;
 	background-image:linear-gradient(to left, #C5D6E8, white 90%);
-	border-top: 8px solid #1791AB;
+	border-top: 8px solid #4E387E;
 }
 
 footer p {
