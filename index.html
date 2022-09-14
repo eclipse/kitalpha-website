@@ -10,6 +10,8 @@
 <link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
 <script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
 
+<script src="js/github.js"></script>
+
 <noscript>
 	<style>
 .jsonly {
@@ -18,56 +20,29 @@
 </style>
 </noscript>
 
-<!-- Add jQuery library -->
-<script type="text/javascript"
-	src="//code.jquery.com/jquery-latest.min.js"></script>
-<script type="text/javascript" src="js/fancyzoom_simplified.js"></script>
-<script type="text/javascript">
-	$(document).ready(function() {
-		$('a.zoom').fancyZoom({
-			scaleImg : true,
-			closeOnClick : true
-		});
-	});
-</script>
 </head>
 
 <body>
 	<header>
-		<div class="logo-left width">
-			<a href="index.html"><img src="images/logo_kitalpha.png"
-				alt="Kitalpha logo" width="40%"></a>
+		<div>
+			<a href="index.html"><img src="images/logo_kitalpha_200.png"
+				alt="Kitalpha logo" width="200px"></a>
 		</div>
 	</header>
+
 	<nav>
-
-		<div class="width">
-			<ul>
-				<li class="start selected"><a href="index.html">Home</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="https://github.com/eclipse/kitalpha/wiki/User-manual">Features</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="start.html">Getting Started</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="events.html">Events</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li class="end"><a href="community.html">Community</a></li>
-				<li style="text-align: right;"><a href="download.html"
-					class="box">Download</a></li>
-				<li style="float: none;"><br style="clear: both;" /></li>
-			</ul>
-		</div>
-
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="community.html">Community</a></li>
+			<li><a href="download.html">Download</a></li>
+		</ul>
 	</nav>
 
-	<div id="hrdiv">
-		<img src="images/bg_breadcrumb.jpg" width="" alt="" height="" />
-	</div>
+	<div id="body">
 
-	<div id="body" class="width-started">
+	<sections>
 		<section id="content">
-			<br />
-			
 			<article class="expanded">
 				<p>
 					<b>Kitalpha</b> is an environment to develop and execute MBE
@@ -95,21 +70,9 @@
 					define, use and manage architecture frameworks and viewpoints</h3>
 
 				<!-- la miniature -->
-				<a href="#ov" class="zoom jsonly"> <img class="center"
-					alt="Overview" src="images/overview.png" width="100%">
+				<a class="zoom jsonly"> <img class="center"
+					alt="Overview" src="images/overview.png" width="200px">
 				</a>
-
-				<!-- la taille normale -->
-				<div class="jsonly" id="ov">
-					<img style="background: #fff; box-shadow: 0px 0px 6px #111;"
-						alt="Overview" src="images/overview.png" />
-				</div>
-
-				<!-- JavaScript disabled -->
-				<noscript>
-					<img class="center" src="images/overview.png" alt="Overview"
-						width="100%"></img>
-				</noscript>
 
 				<br />
 				<h3>DSL Structure in Kitalpha</h3>
@@ -144,99 +107,47 @@
 				</p>
 			</article>
 		</section>
+	</sections>
+	
+	<aside>
 
-		<aside class="sidebar">
+		<ul>
+			<li>
+				<h4>News</h4>
+				<ul id="news-list">
+				</ul>
+				<a href="events.html">more...</a>
+			</li>
 
-			<ul>
-				<li>
-					<h4>News</h4>
+			<li>
+					<h4>Related videos</h4>
 					<ul>
-						<li>2021-12-22: <b>Kitalpha 5.2.0</b> has been released!</li>
-						<li>2021-06-15: <b>Kitalpha 5.1.0</b> has been released!</li>
-						<li>2020-12-21: <b>Kitalpha 5.0.0</b> has been released!</li>
-						<li>2020-11-03: <b>Kitalpha 1.4.2</b> has been released!</li>
-						<li>2020-07-29: <b>Kitalpha 1.4.1</b> has been released!</li>
-						<li>2020-07-29: <b>Kitalpha 1.3.3</b> has been released!</li>
-						<li>2020-02-26: <b>Kitalpha 1.3.2</b> has been released!</li>
-						<li>2019-12-12: <b>Kitalpha 1.4.0</b> has been released!</li>
-						<li>2019-06-17: <b>Kitalpha 1.3.1</b> has been released!</li>
-						<li>2018-12-20: <b>Kitalpha 1.3.0</b> has been released!</li>
-						<li>2017-06-16: <b>Kitalpha 1.1.2</b> has been released!</li>
-						<li>2017-01-06: <b>Kitalpha 1.1.0</b> has been released!</li>
-						<li>2016-10-04: <b>Kitalpha 1.0.1</b> has been released!</li>
-						<li>2016-01-08: Kitalpha left Incubation. <b>Kitalpha 1.0.0</b> is now available!</li>
-						<li>2015-11-03: Kitalpha 0.5.2 has been released!</li>
-						<li>2015-04-17: Kitalpha <a
-							href="https://dev.eclipse.org/ipzilla/show_bug.cgi?id=8213"><b>IP
-									Review</b></a> has been approved!
-						</li>
-						<li>2015-03-12: <a href="https://youtu.be/ju2SNG1u2t8"><b>Video</b></a>,
-							EclipseCon North America, "Viewpoint: the making of. Customizing
-							your MBE Workbench with Kitalpha in 20 minutes", March, 12<sup>th</sup>
-						</li>
-						<li>2015-03-12: <a
-							href="https://www.eclipsecon.org/na2015/session/viewpoint-making-customizing-your-mbe-workbench-kitalpha-20-minutes.html"><b>Talk</b></a>,
-							EclipseCon North America, "Viewpoint: the making of. Customizing
-							your MBE Workbench with Kitalpha in 20 minutes" [<a
-							href="https://youtu.be/H44maadOGXU"><b>Pitch</b></a>]
-						</li>
-						<li>2015-01-09: <a href="https://wiki.eclipse.org/Kitalpha"><b>Wiki</b></a>
-							is online!
-						</li>
-						<li>2015-01-08: <a
-							href="http://www.dsmforum.org/events/DSM14/Papers/Langlois.pdf"><b>New
-									paper and presentation</b></a> of Kitalpha at DSM14
-						</li>
-					</ul>
-				</li>
-				<li><br /> <a id="about"
-					href="https://projects.eclipse.org/projects/polarsys.kitalpha">About This
-						Project</a> <br /> </li>
-				<li class="jsonly"><br />
-						<h4>Related videos</h4>
-						<ul>
-							<li>
-								<iframe width="210" height="157.5"
-									src="https://www.youtube.com/embed/ju2SNG1u2t8?rel=0&autoplay=0&loop=0&wmode=opaque&controls=1&showinfo=0&theme=light&vq=hd720&color=white"
-									frameborder="0" allowfullscreen></iframe>
-								<p>
-									<b>Viewpoint the making of with Kitalpha</b>
-								</p>
+						<li>
+							<a href="https://www.youtube.com/embed/ju2SNG1u2t8"><img src="images/yt/1.png"/></a>
+							<p><b>Viewpoint the making of with Kitalpha</b></p>
 						</li>
 						<li>
-								<iframe width="210" height="157.5"
-									src="https://www.youtube.com/embed/qHFS3x2WLfU?rel=0&autoplay=0&loop=0&wmode=opaque&controls=1&showinfo=0&theme=light&vq=hd720&color=white"
-									frameborder="0" allowfullscreen></iframe>
-								<p>
-									<b>Viewpoint Creation with Kitalpha</b>
-								</p>
+							<a href="https://www.youtube.com/embed/qHFS3x2WLfU"><img src="images/yt/2.png"/></a>
+							<p><b>Viewpoint Creation with Kitalpha</b></p>
 						</li>
 						<li>
-								<iframe width="210" height="157.5"
-									src="https://www.youtube.com/embed/NWCyKsPfc2Y?rel=0&autoplay=0&loop=0&wmode=opaque&controls=1&showinfo=0&theme=light&vq=hd720&color=white"
-									frameborder="0" allowfullscreen></iframe>
-							 <p>
-								<b>Viewpoint Creation with Capella Studio</b>
-							</p>
+							<a href="https://www.youtube.com/embed/NWCyKsPfc2Y"><img src="images/yt/3.png"/></a>
+							<p><b>Viewpoint Creation with Capella Studio</b></p>
 						</li>
 					</ul>
-				</li>
-			</ul>
-		</aside>
+			</li>
+		</ul>
+	</aside>
 
-		<div class="clear"></div>
 	</div>
 
+	<script src="js/sidebar.js"></script>
+	<script src="js/nav.js"></script>
+
 	<footer>
-		<div class="footer-content width">
+		<div>
 			<ul>
-				<li><h4>PolarSys</h4></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys">About</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys/contact">Contact Us</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha">Kitalpha Project Page</a></li>
-			</ul>
-			<ul>
-            	<li><h4>Legal</h4></li>
+            	<li><h3>Legal</h3></li>
 				<li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
 				<li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
 				<li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
@@ -244,37 +155,19 @@
 				<li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
             </ul>
 			<ul>
-				<li><h4>Useful Links</h4></li>
-				<li><a href="https://github.com/eclipse/kitalpha/issues">Report a Bug</a></li>
-				<li><a href="https://wiki.eclipse.org/Kitalpha">How to Contribute</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha/contact">Mailing List</a></li>
+				<li><h3>Useful Links</h3></li>
+				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha">Project Page</a></li>
 				<li><a href="https://forum.mbse-capella.org/c/capella-studio-kitalpha/20">Forum</a></li>
+				<li><a href="https://github.com/eclipse/kitalpha/issues">Report a Bug</a></li>
+				<li><a href="https://github.com/eclipse/kitalpha">Source code</a></li>
+				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha/contact">How to Contribute</a></li>
 			</ul>
-			<ul class="endfooter">
-				<li><h4>Other</h4></li>
-				<li><a href="https://www.thalesgroup.com/">Thalesgroup</a></li>
+			<ul>
+				<li><h3>Other</h3></li>
+				<li><a href="https://eclipse.org/">Eclipse</a></li>
 				<li><a href="https://www.eclipse.org/org/workinggroups/">Working Groups</a></li>
 			</ul>
-			<table>
-				<tr>
-					<td>
-						<a href="https://www.polarsys.org/"><img src="images/polarsys.png" alt="PolarSys logo" width="250"></a>
-						<br />
-						<br />
-					</td>
-					<td>
-						<div class="right-footer">
-							<a href="https://www.eclipse.org/"><img src="images/eclipse.png" alt="Eclipse logo"></a>
-							<br />
-							Copyright © <span id="year">2014</span> The Eclipse Foundation. <br /> All Rights Reserved.
-						</div>
-					</td>
-				</tr>
-			</table>
-
-			<div class="clear"></div>
 		</div>
-
 	</footer>
 </body>
 </html>

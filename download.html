@@ -1,282 +1,127 @@
 <!doctype html>
 <html>
 <link rel="icon" type="image/png" href="favicon.ico" />
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Kitalpha</title>
-	<link rel="stylesheet" href="styles.css" type="text/css" />
-	
-	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
-  	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
-	
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kitalpha</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
+
+<script src="js/markdown.js"></script>
+<script src="js/github.js"></script>
+
+<noscript>
 	<style>
-		
-		.dnd a:link {
-			color: #242A75;
-			font-weight: bold;
-			text-decoration:none;
-		}
-		.dnd a:visited {
-			color: #999999;
-			font-weight:bold;
-			text-decoration:none;
-		}
-		.dnd a:active,
-		.dnd a:hover {
-			color: #1791AB;
-			text-decoration:underline;
-		}
-		.dnd {
-			font-family:Arial, Helvetica, sans-serif;
-			color:#242A75;
-			font-size:12px;
-			text-shadow: 1px 1px 0px #fff;
-			background:#eaebec;
-			#margin:20px;
-			border:#ccc 1px solid;
+.jsonly {
+	display: none
+}
+</style>
+</noscript>
 
-			-moz-border-radius:3px;
-			-webkit-border-radius:3px;
-			border-radius:3px;
-
-			-moz-box-shadow: 0 1px 2px #d1d1d1;
-			-webkit-box-shadow: 0 1px 2px #d1d1d1;
-			box-shadow: 0 1px 2px #d1d1d1;
-		}
-		.dnd th {
-			padding:21px 25px 22px 25px;
-			border-top:1px solid #fafafa;
-			border-bottom:1px solid #e0e0e0;
-
-			background: #ededed;
-			background: -webkit-gradient(linear, left top, left bottom, from(#ededed), to(#ebebeb));
-			background: -moz-linear-gradient(top,  #ededed,  #ebebeb);
-		}
-		.dnd th:first-child {
-			text-align: left;
-			padding-left:20px;
-		}
-		.dnd tr:first-child th:first-child {
-			-moz-border-radius-topleft:3px;
-			-webkit-border-top-left-radius:3px;
-			border-top-left-radius:3px;
-		}
-		.dnd tr:first-child th:last-child {
-			-moz-border-radius-topright:3px;
-			-webkit-border-top-right-radius:3px;
-			border-top-right-radius:3px;
-		}
-		.dnd tr {
-			text-align: center;
-			padding-left:20px;
-		}
-		.dnd td:first-child {
-			text-align: left;
-			padding-left:20px;
-			border-left: 0;
-		}
-		.dnd td {
-			padding:18px;
-			border-top: 1px solid #ffffff;
-			border-bottom:1px solid #e0e0e0;
-			border-left: 1px solid #e0e0e0;
-
-			background: #fafafa;
-			background: -webkit-gradient(linear, left top, left bottom, from(#fbfbfb), to(#fafafa));
-			background: -moz-linear-gradient(top,  #fbfbfb,  #fafafa);
-		}
-		.dnd tr.even td {
-			background: #f6f6f6;
-			background: -webkit-gradient(linear, left top, left bottom, from(#f8f8f8), to(#f6f6f6));
-			background: -moz-linear-gradient(top,  #f8f8f8,  #f6f6f6);
-		}
-		.dnd tr:last-child td {
-			border-bottom:0;
-		}
-		.dnd tr:last-child td:first-child {
-			-moz-border-radius-bottomleft:3px;
-			-webkit-border-bottom-left-radius:3px;
-			border-bottom-left-radius:3px;
-		}
-		.dnd tr:last-child td:last-child {
-			-moz-border-radius-bottomright:3px;
-			-webkit-border-bottom-right-radius:3px;
-			border-bottom-right-radius:3px;
-		}
-		.dnd tr:hover td {
-			background: #f2f2f2;
-			background: -webkit-gradient(linear, left top, left bottom, from(#f2f2f2), to(#f0f0f0));
-			background: -moz-linear-gradient(top,  #f2f2f2,  #f0f0f0);	
-		}
-	</style>
-	
-	
-	<!-- Add jQuery library -->
-	<script type="text/javascript" src="//code.jquery.com/jquery-latest.min.js"></script>
-	
-	<script>
-		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-		})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-		
-		ga('create', 'UA-60944796-1', 'auto');
-		ga('send', 'pageview');
-	</script>
-	
 </head>
+
 <body>
 	<header>
-		<div class="logo-left width">
-			<a href="index.html"><img src="images/logo_kitalpha.png" alt="Kitalpha logo" width="40%"></a>
+		<div>
+			<a href="index.html"><img src="images/logo_kitalpha_200.png"
+				alt="Kitalpha logo" width="200px"></a>
 		</div>
 	</header>
 
-    <nav>
-		<div class="width">
-			<ul>
-				<li class="start"><a href="index.html">Home</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="https://github.com/eclipse/kitalpha/wiki/User-manual">Features</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="start.html">Getting Started</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="events.html">Events</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li class="end"><a href="community.html">Community</a></li>
-				<li style="text-align:right;"><a href="download.html" class="box">Download</a></li>
-				<li style="float:none;"><br style="clear:both;" /></li> 
-			</ul>		
-		</div>
-    </nav>
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="community.html">Community</a></li>
+			<li><a href="download.html">Download</a></li>
+		</ul>
+	</nav>
 
-	<div id="hrdiv">
-		<img src="images/bg_breadcrumb.jpg" width="" alt="" height="" />
+	<div id="body">
+
+	<sections>
+		<section id="content">
+			<h4>Download the latest release of Kitalpha</h4>
+		</section>
+
+		<section id="content-a">
+			<h3>Getting started</h3>
+		<p>
+			Kitalpha comes with bundled examples to be found in the Eclipse platform examples.
+			<ul>
+				<li>File > New > Example... and under the <b>Kitalpha Examples</b> section</li>
+			</ul>
+		</p>
+		<h3>Components sample viewpoint</h3>
+		<p>
+			Kitalpha comes with the <b>ComponentSample</b> example. It features: 
+			<ul>
+				<li>- ComponentSample viewpoint and its QualityAssessment, Safety, SafetyPatterns, and Performance extension viewpoints</li>
+				<li>- Composer and Transposer applications examples</li>
+			</ul>
+		</p>
+		<h3>Other examples</h3>
+		<p>
+			Examples for the <b>Cadence</b>, <b>Composer</b> and <b>Transposer</b> tools can also be found.
+		</p>
+	</section>
+	</sections>
+	
+	<aside>
+
+		<ul>
+			<li>
+				<h4>News</h4>
+				<ul id="news-list">
+				</ul>
+				<a href="events.html">more...</a>
+			</li>
+
+			<li>
+					<h4>Related videos</h4>
+					<ul>
+						<li>
+							<a href="https://www.youtube.com/embed/ju2SNG1u2t8"><img src="images/yt/1.png"/></a>
+							<p><b>Viewpoint the making of with Kitalpha</b></p>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/embed/qHFS3x2WLfU"><img src="images/yt/2.png"/></a>
+							<p><b>Viewpoint Creation with Kitalpha</b></p>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/embed/NWCyKsPfc2Y"><img src="images/yt/3.png"/></a>
+							<p><b>Viewpoint Creation with Capella Studio</b></p>
+						</li>
+					</ul>
+			</li>
+		</ul>
+	</aside>
+	
+	<script>
+
+		github.releases().then(data => {
+			let lists = data.filter(d => !d.prerelease).slice(0, 1).map(n => 
+			"<li class='download'>"+
+			"<span class='download-name'>"+n.name+"</span>"+"<span class='download-description'>"+markdown.toHtml(n.body)+"</span>"+"</li>").join("");
+
+			document.getElementById("content").innerHTML += "<ul>"+lists+"</ul>";
+		}).catch(err => { 
+			document.getElementById("content").innerHTML += "Cannot retrieve releases. You can retrieve latest releases on the <a href='https://github.com/eclipse/kitalpha/releases'>Github repository</a>";
+		});
+	</script>
+
 	</div>
 
-    <div id="body" class="width-started">
-		
-		
-        <section id="content">
-        	<br />
-        	
-        	<div style="position: relative; z-index: 10;">
+	<script src="js/sidebar.js"></script>
+	<script src="js/nav.js"></script>
 
-				<div
-					style="background-color: #D8D8D8; position: absolute; z-index: -1; top: 0; left: 0; right: 0; bottom: 0; opacity: 0.2;"></div>
-				<p>
-					<img style="float: left; margin: 0px 15px 0px 0px;"
-						src="images/whatsnew.png" width="100" /> <br /> <b>Kitalpha
-						5.2.0</b> is now available! <br /> See the <a
-						href="https://projects.eclipse.org/projects/polarsys.kitalpha/releases/5.2.0/plan"><b>releases
-							notes</b></a> for further information.
-					<!-- See <b>this post</b> for more details. -->
-					<br style="clear: both;" />
-				</p>
-			</div>
-			
-			<article class="expanded" id="construction">
-				<table>
-					<tr>
-						<th>
-							<h3>Information about archives</h3>
-							<p>
-								In order to download previous releases of Kitalpha,
-								please follow <a
-									href="https://download.eclipse.org/kitalpha/"><b>this link</b></a>. 
-							</p>
-						</th>
-					</tr>
-				</table>
-			</article>
-		
-			<article class="expanded">
-				<h3>
-					Kitalpha 5.2.0:
-				</h3>
-				<table class="dnd" cellspacing='0'> <!-- cellspacing='0' is important, must stay -->
-
-					<!-- Table Header -->
-					
-					<thead>
-						<tr>
-							<th>Operating System</th>
-							<th>Architecture</th>
-							<th>Download link</th>
-						</tr>
-					</thead>
-					
-					<!-- Table Header -->
-
-					<!-- Table Body -->
-					<tbody>
-						<tr class="even">
-							<td>Windows</td>
-							<td>64-bit</td>
-							<td><a href="https://download.eclipse.org/kitalpha/products/release/5.2.0/kitalpha-5.2.0.202111291638-win32.win32.x86_64.zip" 
-									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '5.2.0', 'Win-x64');"><img src="images/download.png" width="15%" alt="Link"></a></td>
-						</tr>
-						<tr>
-							<td>Linux</td>
-							<td>64-bit</td>
-							<td><a href="https://download.eclipse.org/kitalpha/products/release/5.2.0/kitalpha-5.2.0.202111291638-linux.gtk.x86_64.zip" 
-									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '5.2.0', 'Linux-x64');"><img src="images/download.png" width="15%" alt="Link"></a></td>
-						</tr>
-						<tr class="even">
-							<td>Mac OSX</td>
-							<td>64-bit</td>
-							<td><a href="https://download.eclipse.org/kitalpha/products/release/5.2.0/kitalpha-5.2.0.202111291638-macosx.cocoa.x86_64.zip" 
-									target="_blank" onClick="ga('send', 'event', 'Kitalpha', '5.2.0', 'MacOSX');"><img src="images/download.png" width="15%" alt="Link"></a></td>
-						</tr>
-
-					</tbody>
-					<!-- Table Body -->
-
-				</table>
-				
-				<br />
-				
-				<p>
-					&nbsp;&nbsp;&nbsp;The installation instructions are detailed in the <b> <a href="start.html"> <i> Getting Started </i> </a> </b> page.
-				</p>				
-			</article>
-        </section>
-        
-        <aside class="sidebar">
-
-           <ul>	
-				<li>
-					<h4>Important information</h4>
-					<ul>
-						<!-- The release is official
-						<li>
-							<u>Note:</u> These are pre-release versions, not official versions. 
-						</li>
-						-->
-						<li>
-							<sup>*</sup><u>Note:</u> MacOS and Linux versions have not been field-tested. Do not hesitate to provide your feedback on the <a href="https://forum.mbse-capella.org/c/capella-studio-kitalpha/20">forum</a>. 
-						</li>
-                    </ul>
-                </li>
-			</ul>
-			<br />
-			<br />
-			<br />
-		
-        </aside>
-    	<div class="clear"></div>
-    </div>
-	
-    <footer>
-		<div class="footer-content width">
+	<footer>
+		<div>
 			<ul>
-				<li><h4>PolarSys</h4></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys">About</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys/contact">Contact Us</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha">Kitalpha Project Page</a></li>
-			</ul>
-			<ul>
-            	<li><h4>Legal</h4></li>
+            	<li><h3>Legal</h3></li>
 				<li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
 				<li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
 				<li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
@@ -284,37 +129,19 @@
 				<li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
             </ul>
 			<ul>
-				<li><h4>Useful Links</h4></li>
-				<li><a href="https://github.com/eclipse/kitalpha/issues">Report a Bug</a></li>
-				<li><a href="https://wiki.eclipse.org/Kitalpha">How to Contribute</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha/contact">Mailing List</a></li>
+				<li><h3>Useful Links</h3></li>
+				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha">Project Page</a></li>
 				<li><a href="https://forum.mbse-capella.org/c/capella-studio-kitalpha/20">Forum</a></li>
+				<li><a href="https://github.com/eclipse/kitalpha/issues">Report a Bug</a></li>
+				<li><a href="https://github.com/eclipse/kitalpha">Source code</a></li>
+				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha/contact">How to Contribute</a></li>
 			</ul>
-			<ul class="endfooter">
-				<li><h4>Other</h4></li>
-				<li><a href="https://www.thalesgroup.com/">Thalesgroup</a></li>
+			<ul>
+				<li><h3>Other</h3></li>
+				<li><a href="https://eclipse.org/">Eclipse</a></li>
 				<li><a href="https://www.eclipse.org/org/workinggroups/">Working Groups</a></li>
 			</ul>
-			<table>
-				<tr>
-					<td>
-						<a href="https://www.polarsys.org/"><img src="images/polarsys.png" alt="PolarSys logo" width="250"></a>
-						<br />
-						<br />
-					</td>
-					<td>
-						<div class="right-footer">
-							<a href="https://www.eclipse.org/"><img src="images/eclipse.png" alt="Eclipse logo"></a>
-							<br />
-							Copyright © <span id="year">2014</span> The Eclipse Foundation. <br /> All Rights Reserved.
-						</div>
-					</td>
-				</tr>
-			</table>
-		
-			<div class="clear"></div>			
 		</div>
-   
 	</footer>
 </body>
 </html>

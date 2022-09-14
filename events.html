@@ -1,89 +1,101 @@
 <!doctype html>
 <html>
 <link rel="icon" type="image/png" href="favicon.ico" />
+
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Kitalpha</title>
-	<link rel="stylesheet" href="styles.css" type="text/css" />
-	
-	<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
-  	<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Kitalpha</title>
+<link rel="stylesheet" href="styles.css" type="text/css" />
+
+<link rel="stylesheet" type="text/css" href="//www.eclipse.org/eclipse.org-common/themes/solstice/public/stylesheets/vendor/cookieconsent/cookieconsent.min.css" />
+<script src="//www.eclipse.org/eclipse.org-common/themes/solstice/public/javascript/vendor/cookieconsent/default.min.js"></script>
+
+<script src="js/github.js"></script>
+
+<noscript>
+	<style>
+.jsonly {
+	display: none
+}
+</style>
+</noscript>
+
 </head>
+
 <body>
 	<header>
-		<div class="logo-left width">
-			<a href="index.html"><img src="images/logo_kitalpha.png" alt="Kitalpha logo" width="40%"></a>
+		<div>
+			<a href="index.html"><img src="images/logo_kitalpha_200.png"
+				alt="Kitalpha logo" width="200px"></a>
 		</div>
 	</header>
-    <nav>
-		
-		<div class="width">
-			<ul>
-				<li class="start"><a href="index.html">Home</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="https://github.com/eclipse/kitalpha/wiki/User-manual">Features</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li><a href="start.html">Getting Started</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li class="selected"><a href="events.html">Events</a></li>
-				<li class="divider-vertical-second-menu"></li>
-				<li class="end"><a href="community.html">Community</a></li>
-				<li style="text-align:right;"><a href="download.html" class="box">Download</a></li>
-				<li style="float:none;"><br style="clear:both;" /></li> 
-			</ul>		
-		</div>
-		
-    </nav>
 
-	<div id="hrdiv">
-		<img src="images/bg_breadcrumb.jpg" width="" alt="" height="" />
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="events.html">Events</a></li>
+			<li><a href="community.html">Community</a></li>
+			<li><a href="download.html">Download</a></li>
+		</ul>
+	</nav>
+
+	<div id="body">
+
+	<sections>
+		<section id="content">
+			<h4>Latest events</h4>
+		</section>
+	</sections>
+	
+	<aside>
+
+		<ul>
+			<li>
+				<h4>News</h4>
+				<ul id="news-list">
+				</ul>
+				<a href="events.html">more...</a>
+			</li>
+
+			<li>
+					<h4>Related videos</h4>
+					<ul>
+						<li>
+							<a href="https://www.youtube.com/embed/ju2SNG1u2t8"><img src="images/yt/1.png"/></a>
+							<p><b>Viewpoint the making of with Kitalpha</b></p>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/embed/qHFS3x2WLfU"><img src="images/yt/2.png"/></a>
+							<p><b>Viewpoint Creation with Kitalpha</b></p>
+						</li>
+						<li>
+							<a href="https://www.youtube.com/embed/NWCyKsPfc2Y"><img src="images/yt/3.png"/></a>
+							<p><b>Viewpoint Creation with Capella Studio</b></p>
+						</li>
+					</ul>
+			</li>
+		</ul>
+	</aside>
+	
+	<script>
+		github.events().then(data => {
+			let lists = data.map(n => "<li class='event'><span class='event-date'>"+new Date(n.created_at).toLocaleDateString()+"</span> "+
+			"<span class='event-name'>"+n.name+"</span>"+"<span class='event-description'>"+n.description+"</span>"+"</li>").join("");
+			document.getElementById("content").innerHTML += "<ul class='events'>"+lists+"</ul>";
+		}).catch(err => { 
+			document.getElementById("content").innerHTML += "Cannot retrieve events";
+		});
+	</script>
+
 	</div>
 
-    <div id="body" class="width-started">
-		
-		<section id="content">
-			<article class="expanded" id="construction">
-				<table>		
-					<tr>
-						<th>
-						<h3>2015</h3>
-							<h5>March</h5>
-							<ul>
-								<li><a href="https://youtu.be/ju2SNG1u2t8"><b>Video</b></a>, EclipseCon North America, "<b>Viewpoint: the making of. Customizing your MBE Workbench with Kitalpha in 20 minutes</b>", March, 12<sup>th</sup>
-								</li>
-								<li><a href="https://www.eclipsecon.org/na2015/session/viewpoint-making-customizing-your-mbe-workbench-kitalpha-20-minutes.html"><b>Talk</b></a>, EclipseCon North America, "<b>Viewpoint: the making of. Customizing your MBE Workbench with Kitalpha in 20 minutes</b>", March, 12<sup>th</sup>
-								[<a href="https://youtu.be/H44maadOGXU"><b>Pitch</b></a>]
-								</li>
-							</ul>
-							<br />
-							<h5>January</h5>
-							<ul>
-								<li>
-									<a href="http://www.dsmforum.org/events/DSM14/Papers/Langlois.pdf"><b>New paper and presentation</b></a> of Kitalpha at DSM14, January, 8<sup>th</sup>
-								</li>
-							</ul>	
-						</th>
-					</tr>
-				</table>
-			</article>		
-		
-		
-        </section>
-		
-		
-        
-    	<div class="clear"></div>
-    </div>
-    <footer>
-		<div class="footer-content width">
+	<script src="js/sidebar.js"></script>
+	<script src="js/nav.js"></script>
+
+	<footer>
+		<div>
 			<ul>
-				<li><h4>PolarSys</h4></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys">About</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys/contact">Contact Us</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha">Kitalpha Project Page</a></li>
-			</ul>
-			<ul>
-            	<li><h4>Legal</h4></li>
+            	<li><h3>Legal</h3></li>
 				<li><a href="https://www.eclipse.org/legal/privacy.php">Privacy Policy</a></li>
 				<li><a href="https://www.eclipse.org/legal/termsofuse.php">Terms of Use</a></li>
 				<li><a href="https://www.eclipse.org/legal/copyright.php">Copyright Agent</a></li>
@@ -91,37 +103,19 @@
 				<li><a href="https://www.eclipse.org/legal/">Legal Resources</a></li>
             </ul>
 			<ul>
-				<li><h4>Useful Links</h4></li>
-				<li><a href="https://github.com/eclipse/kitalpha/issues">Report a Bug</a></li>
-				<li><a href="https://wiki.eclipse.org/Kitalpha">How to Contribute</a></li>
-				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha/contact">Mailing List</a></li>
+				<li><h3>Useful Links</h3></li>
+				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha">Project Page</a></li>
 				<li><a href="https://forum.mbse-capella.org/c/capella-studio-kitalpha/20">Forum</a></li>
+				<li><a href="https://github.com/eclipse/kitalpha/issues">Report a Bug</a></li>
+				<li><a href="https://github.com/eclipse/kitalpha">Source code</a></li>
+				<li><a href="https://projects.eclipse.org/projects/polarsys.kitalpha/contact">How to Contribute</a></li>
 			</ul>
-			<ul class="endfooter">
-				<li><h4>Other</h4></li>
-				<li><a href="https://www.thalesgroup.com/">Thalesgroup</a></li>
+			<ul>
+				<li><h3>Other</h3></li>
+				<li><a href="https://eclipse.org/">Eclipse</a></li>
 				<li><a href="https://www.eclipse.org/org/workinggroups/">Working Groups</a></li>
 			</ul>
-			<table>
-				<tr>
-					<td>
-						<a href="https://www.polarsys.org/"><img src="images/polarsys.png" alt="PolarSys logo" width="250"></a>
-						<br />
-						<br />
-					</td>
-					<td>
-						<div class="right-footer">
-							<a href="https://www.eclipse.org/"><img src="images/eclipse.png" alt="Eclipse logo"></a>
-							<br />
-							Copyright © <span id="year">2014</span> The Eclipse Foundation. <br /> All Rights Reserved.
-						</div>
-					</td>
-				</tr>
-			</table>
-		
-			<div class="clear"></div>			
 		</div>
-   
 	</footer>
 </body>
 </html>
